@@ -1,12 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: "Courier New", Courier, monospace; /* Classic monospaced font */
+    background-color: #000000; /* Black background */
+    color: #00ff00; /* Bright green text */
     text-align: center;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
-    color: #0056b3;
+    color: #00ff00; /* Matching green for the heading */
 }
+
+p {
+    color: #00ff00; /* Matching green for paragraphs */
+}
+
