@@ -15,3 +15,18 @@ p {
     color: #00ff00; /* Matching green for paragraphs */
 }
 
+.blinking-text {
+    color: #00ff00; /* Green text */
+    font-size: 1.2em; /* Slightly larger font size */
+    animation: blink 1s infinite; /* Apply blinking animation */
+}
+
+/* Keyframes for the blinking effect */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+}
