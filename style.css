@@ -1,32 +1,94 @@
+/* styles.css */
 body {
-    font-family: "Courier New", Courier, monospace; /* Classic monospaced font */
-    background-color: #000000; /* Black background */
-    color: #00ff00; /* Bright green text */
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: #39ff14; /* Neon green text for retro vibe */
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111; /* Darker navbar background */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #39ff14; /* Matches page text color */
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #39ff14;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: lightgray;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .login {
+  color: lightgray;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-buttons .signup {
+  background-color: #39ff14;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.auth-buttons .signup:hover {
+  background-color: lightgray;
 }
 
 h1 {
-    color: #00ff00; /* Matching green for the heading */
+  margin-top: 80px; /* Add space below navbar */
+  font-size: 2.5em;
 }
 
 p {
-    color: #00ff00; /* Matching green for paragraphs */
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+img {
+  border: 3px solid #39ff14; /* Matches text color for a retro look */
+  border-radius: 10px;
 }
 
 .blinking-text {
-    color: #00ff00; /* Green text */
-    font-size: 1.2em; /* Slightly larger font size */
-    animation: blink 1s infinite; /* Apply blinking animation */
+  animation: blink 1.5s step-start infinite;
 }
 
-/* Keyframes for the blinking effect */
+/* Animation for blinking text */
 @keyframes blink {
-    0%, 100% {
-        opacity: 1; /* Fully visible */
-    }
-    50% {
-        opacity: 0; /* Invisible */
-    }
+  50% {
+    opacity: 0;
+  }
 }
