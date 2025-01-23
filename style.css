@@ -1,24 +1,29 @@
 /* styles.css */
+/* Updated Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAFAFA; /* Light navbar background */
+  padding: 10px 20px; /* Reduced padding to give more space for content */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 70px; /* Ensures consistent height */
+}
+
+/* Body Padding to Prevent Overlap */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #FAFAFA;
   color: #2A2722; /* Off black */
   text-align: center;
+  padding-top: 70px; /* Matches the navbar height */
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FAFAFA; /* Light navbar background */
-  padding: 20px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
 
 .logo {
   font-size: 4em;
