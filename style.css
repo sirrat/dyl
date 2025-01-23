@@ -22,7 +22,7 @@ body {
 .logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: #39ff14; /* Matches page text color */
+  color: #3a5a40; /* Dark Green */
   text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #39ff14;
+  color: #2A2722;
   font-weight: 500;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .auth-buttons .signup {
-  background-color: #39ff14;
+  background-color: #2A2722;
   color: black;
   padding: 5px 10px;
   text-decoration: none;
@@ -78,7 +78,7 @@ p {
 }
 
 img {
-  border: 3px solid #39ff14; /* Matches text color for a retro look */
+  border: 3px solid #FAFAFA; /* Matches text color for a retro look */
   border-radius: 10px;
 }
 
