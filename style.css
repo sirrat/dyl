@@ -11,8 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111; /* Darker navbar background */
-  padding: 10px 20px;
+  background-color: #FAFAFA; /* Darker navbar background */
+  padding: 20px 20px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -40,31 +40,12 @@ body {
 }
 
 .nav-links a:hover {
-  color: lightgray;
+  color: #2A2722;
 }
 
 .auth-buttons {
   display: flex;
   gap: 10px;
-}
-
-.auth-buttons .login {
-  color: lightgray;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.auth-buttons .signup {
-  background-color: #2A2722;
-  color: black;
-  padding: 5px 10px;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.auth-buttons .signup:hover {
-  background-color: lightgray;
 }
 
 h1 {
