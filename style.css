@@ -1,83 +1,66 @@
-/* Updated Navbar Styling */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Align logo and links on opposite sides */
   align-items: center;
   background-color: #FAFAFA; /* Light navbar background */
-  padding: 10px 20px; /* Reduced padding to give more space for content */
+  padding: 10px 20px; /* Padding for spacing */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  height: 70px; /* Ensures consistent height */
-}
-
-/* Body Padding to Prevent Overlap */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #FAFAFA;
-  color: #2A2722; /* Off black */
-  text-align: center;
-  padding-top: 100px; /* Matches the navbar height */
-}
-
-.logo {
-  font-size: 4em;
-  font-weight: bold;
-  color: #3a5a40; /* Dark Green */
-  text-decoration: none;
-  display: flex; /* Align image and text in a row */
-  align-items: center; /* Vertically center image and text */
-  gap: 10px; /* Space between the image and text */
-}
-
-.header-image {
-  height: 40px; /* Adjust the size to fit with your header */
-  width: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Optional: Makes the image circular */
+  height: 70px; /* Consistent height */
 }
 
 .nav-links {
   list-style: none;
-  display: flex; /* Use flex for horizontal alignment */
-  justify-content: flex-end; /* Push links to the right */
-  gap: 20px; /* Adjust spacing between links */
+  display: flex; /* Flexbox for horizontal alignment */
+  gap: 20px; /* Add spacing between links */
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #2A2722; /* Off black */
+  color: #2A2722; /* Off-black for readability */
   font-weight: 500;
-  font-size: 1.2em; /* Adjust for readability */
+  font-size: 1.2em; /* Slightly larger for visibility */
 }
 
 .nav-links a:hover {
-  color: #3a5a40; /* Dark Green on hover */
+  color: #3a5a40; /* Dark green for hover effect */
+}
+
+.logo {
+  display: flex; /* Align logo and text */
+  align-items: center; /* Vertically center */
+  gap: 10px; /* Add space between image and text */
+}
+
+.header-image {
+  height: 40px; /* Adjust height for balance */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: Makes the image circular */
 }
 
 @media (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-    padding: 10px; /* Reduce padding */
-    height: auto; /* Adjust height dynamically */
-  }
-
-  .nav-links {
-    justify-content: center; /* Center navigation links */
-    width: 100%; /* Spread links across the full width */
-    gap: 10px; /* Reduce spacing for smaller screens */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 10px; /* Adjust padding */
   }
 
   .logo {
-    margin-bottom: 10px; /* Add spacing between logo and links */
-    width: 100%; /* Center logo */
-    text-align: center; /* Align text in the center */
+    margin-bottom: 10px; /* Add spacing below logo */
+    width: 100%; /* Center logo in its own row */
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center; /* Center links */
+    width: 100%; /* Take up full width */
   }
 }
+
 
 h1 {
   margin-top: 100px; /* Add space below navbar */
