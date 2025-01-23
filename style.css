@@ -42,6 +42,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
+  justify-content: flex-end; /* Pushes the links to the right */
   gap: 40px; /* Space between links */
   margin: 0;
   padding: 0;
@@ -56,6 +57,22 @@ body {
 
 .nav-links a:hover {
   color: #3a5a40; /* Dark Green on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto; /* Adjust navbar height */
+  }
+
+  .nav-links {
+    justify-content: center; /* Center the links for smaller screens */
+    width: 100%; /* Let links take full width */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add spacing between the logo and links */
+  }
 }
 
 h1 {
@@ -129,3 +146,4 @@ img {
   border-radius: 10px;
   transition: opacity 0.3s ease;
 }
+
