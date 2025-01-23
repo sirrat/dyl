@@ -1,3 +1,4 @@
+/* Updated Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between; /* Align logo and links on opposite sides */
@@ -12,9 +13,36 @@
   height: 70px; /* Consistent height */
 }
 
+/* Body Padding to Prevent Overlap */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FAFAFA;
+  color: #2A2722; /* Off black */
+  text-align: center;
+  padding-top: 100px; /* Matches the navbar height */
+}
+
+.logo {
+  display: flex; /* Align logo and text */
+  align-items: center; /* Vertically center */
+  gap: 10px; /* Add space between image and text */
+  font-size: 4em;
+  font-weight: bold;
+  color: #3a5a40; /* Dark Green */
+  text-decoration: none;
+}
+
+.header-image {
+  height: 40px; /* Adjust height for balance */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: Makes the image circular */
+}
+
 .nav-links {
   list-style: none;
   display: flex; /* Flexbox for horizontal alignment */
+  justify-content: flex-end; /* Push links to the right */
   gap: 20px; /* Add spacing between links */
   margin: 0;
   padding: 0;
@@ -31,18 +59,19 @@
   color: #3a5a40; /* Dark green for hover effect */
 }
 
-.logo {
-  display: flex; /* Align logo and text */
-  align-items: center; /* Vertically center */
-  gap: 10px; /* Add space between image and text */
+/* Animation for blinking text */
+.blinking-text {
+  animation: blink 3s step-start infinite;
+  color: #2A2722; /* Off black */
 }
 
-.header-image {
-  height: 40px; /* Adjust height for balance */
-  width: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Optional: Makes the image circular */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -58,9 +87,9 @@
   .nav-links {
     justify-content: center; /* Center links */
     width: 100%; /* Take up full width */
+    gap: 10px; /* Adjust spacing */
   }
 }
-
 
 h1 {
   margin-top: 100px; /* Add space below navbar */
@@ -79,18 +108,6 @@ img {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
-}
-
-.blinking-text {
-  animation: blink 3s step-start infinite;
-  color: #2A2722; /* Off black */
-}
-
-/* Animation for blinking text */
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
 }
 
 /* Portfolio Styling */
@@ -133,4 +150,3 @@ img {
   border-radius: 10px;
   transition: opacity 0.3s ease;
 }
-
