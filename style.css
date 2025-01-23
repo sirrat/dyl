@@ -28,6 +28,15 @@ body {
   font-weight: bold;
   color: #3a5a40; /* Dark Green */
   text-decoration: none;
+  display: flex; /* Align image and text in a row */
+  align-items: center; /* Vertically center image and text */
+  gap: 10px; /* Space between the image and text */
+}
+
+.header-image {
+  height: 40px; /* Adjust the size to fit with your header */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: Makes the image circular */
 }
 
 .nav-links {
