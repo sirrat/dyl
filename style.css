@@ -11,12 +11,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FAFAFA; /* Darker navbar background */
+  background-color: #FAFAFA; /* Light navbar background */
   padding: 20px 20px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .logo {
@@ -29,18 +30,20 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 40px; /* Space between links */
   margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #2A2722;
+  color: #2A2722; /* Off black */
   font-weight: 500;
+  font-size: 1.2em; /* Adjusted for readability */
 }
 
 .nav-links a:hover {
-  color: #ffffff;
+  color: #3a5a40; /* Dark Green on hover */
 }
 
 .auth-buttons {
@@ -49,22 +52,25 @@ body {
 }
 
 h1 {
-  margin-top: 80px; /* Add space below navbar */
+  margin-top: 100px; /* Add space below navbar */
   font-size: 2.5em;
+  color: #2A2722; /* Consistent color */
 }
 
 p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: #3a5a40; /* Dark green for subtle contrast */
 }
 
 img {
-  border: 3px solid #FAFAFA; /* Matches text color for a retro look */
+  border: 3px solid #FAFAFA; /* Matches background color */
   border-radius: 10px;
 }
 
 .blinking-text {
   animation: blink 3s step-start infinite;
+  color: #2A2722; /* Off black */
 }
 
 /* Animation for blinking text */
@@ -72,4 +78,9 @@ img {
   50% {
     opacity: 0;
   }
+}
+
+/* Additional padding for body to prevent content overlap */
+body {
+  padding-top: 100px;
 }
