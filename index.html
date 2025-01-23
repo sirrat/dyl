@@ -21,10 +21,39 @@
   <!-- Main Content -->
   <h1>Welcome to My GIS Portfolio!</h1>
   <p>This is a work in progress to learn about UX/UI. Check back often for updates and changes to the webpage. - d</p>
-  <img src="https://raw.githubusercontent.com/sirrat/dyl/main/src/img/B.png" 
-       alt="Little Buddy the cat!" width="200" height="200">
   
+  <!-- Project List -->
+  <div class="portfolio">
+    <ul class="project-list">
+      <li class="project-item" data-image="project1.jpg" data-link="project1.html">Project 1</li>
+      <li class="project-item" data-image="project2.jpg" data-link="project2.html">Project 2</li>
+      <li class="project-item" data-image="project3.jpg" data-link="project3.html">Project 3</li>
+    </ul>
+    <div class="project-preview">
+      <img id="preview-image" src="default.jpg" alt="Preview">
+    </div>
+  </div>
+
   <!-- Blinking text -->
   <p class="blinking-text">More coming soon...</p>
+
+  <script>
+    const projectItems = document.querySelectorAll(".project-item");
+    const previewImage = document.getElementById("preview-image");
+
+    projectItems.forEach((item) => {
+      // Change preview image on hover
+      item.addEventListener("mouseover", () => {
+        const imageSrc = item.getAttribute("data-image");
+        previewImage.src = imageSrc;
+      });
+
+      // Navigate to project page on click
+      item.addEventListener("click", () => {
+        const link = item.getAttribute("data-link");
+        window.location.href = link;
+      });
+    });
+  </script>
 </body>
 </html>
