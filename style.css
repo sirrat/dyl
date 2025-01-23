@@ -1,4 +1,3 @@
-/* styles.css */
 /* Updated Navbar Styling */
 .navbar {
   display: flex;
@@ -21,9 +20,8 @@ body {
   background-color: #FAFAFA;
   color: #2A2722; /* Off black */
   text-align: center;
-  padding-top: 70px; /* Matches the navbar height */
+  padding-top: 100px; /* Matches the navbar height */
 }
-
 
 .logo {
   font-size: 4em;
@@ -51,11 +49,6 @@ body {
   color: #3a5a40; /* Dark Green on hover */
 }
 
-.auth-buttons {
-  display: flex;
-  gap: 10px;
-}
-
 h1 {
   margin-top: 100px; /* Add space below navbar */
   font-size: 2.5em;
@@ -71,6 +64,8 @@ p {
 img {
   border: 3px solid #FAFAFA; /* Matches background color */
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 .blinking-text {
@@ -85,7 +80,43 @@ img {
   }
 }
 
-/* Additional padding for body to prevent content overlap */
-body {
-  padding-top: 100px;
+/* Portfolio Styling */
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 30%;
+}
+
+.project-item {
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-item:hover {
+  color: #3a5a40; /* Dark Green */
+  transform: translateX(10px);
+}
+
+.project-preview {
+  width: 65%;
+  text-align: center;
+}
+
+.project-preview img {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
 }
